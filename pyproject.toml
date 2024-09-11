@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">3.12,<3.13"
 python-fasthtml = "^0.5.2"
+fastsql = "^2.0.3"
 
 
 [tool.poetry.group.dev.dependencies]
