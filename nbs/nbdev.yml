@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "fasthtml_todo"
+  site-url: "https://rnair98.github.io/fasthtml_todo"
+  description: "Yet another todo app using fasthtml"
+  repo-branch: main
+  repo-url: "https://github.com/rnair98/fasthtml_todo"
