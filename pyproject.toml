@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fasthtml-todo"
+version = "0.1.0"
+description = "todo app with fasthtml"
+authors = ["Rohit Nair <6954311+rnair98@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.12,<3.13"
+python-fasthtml = "^0.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.4"
+pre-commit = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
