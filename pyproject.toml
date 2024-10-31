@@ -41,6 +41,8 @@ dev-dependencies = [
     "pre-commit<4.0.0,>=3.6.2",
     "types-passlib<2.0.0.0,>=1.7.7.20240106",
     "coverage<8.0.0,>=7.4.3",
+    "isort>=5.13.2",
+    "black[jupyter]>=24.10.0",
 ]
 
 [build-system]
@@ -71,6 +73,7 @@ ignore = [
     "B008",  # do not perform function calls in argument defaults
     "W191",  # indentation contains tabs
     "B904",  # Allow raising exceptions without from e, for HTTPException
+    "F403",  # Ignore imports from __future__
 ]
 
 [tool.ruff.lint.pyupgrade]

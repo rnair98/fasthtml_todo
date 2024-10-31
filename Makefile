@@ -17,3 +17,9 @@ clean:
 	find . -type f -name '*.dylib' -delete
 
 export PYTHONPATH := $(shell pwd)
+
+format:
+	@echo "Formatting code..."
+	ruff check --fix .
+	isort .
+	black .
