@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">3.12,<3.13"
-python-fasthtml = "^0.5.2"
+python-fasthtml = "^0.9.0"
 fastsql = "^2.0.3"
 
 

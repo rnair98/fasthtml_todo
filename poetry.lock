@@ -563,20 +563,20 @@ tests = ["asttokens (>=2.1.0)", "coverage", "coverage-enable-subprocess", "ipyth
 
 [[package]]
 name = "fastcore"
-version = "1.7.5"
+version = "1.7.19"
 description = "Python supercharged for fastai development"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "fastcore-1.7.5-py3-none-any.whl", hash = "sha256:7d11cc34e6eb44cfe61eefc30440eb9a1f099fdf9c5f615a51121b4aa227cd87"},
-    {file = "fastcore-1.7.5.tar.gz", hash = "sha256:c5525de04eab64a0d4f36fa422442302f76730bdeb6d9fb3fe5fbfcaaf3a9735"},
+    {file = "fastcore-1.7.19-py3-none-any.whl", hash = "sha256:c528203caf2bcb6869f1198c7bcb0f77158e04eeb8d3bc4c7b60c21b389235a1"},
+    {file = "fastcore-1.7.19.tar.gz", hash = "sha256:72ac75cf3f7a591966e24aa37a4283512a097a098b4794c944ce707f71ba0f02"},
 ]
 
 [package.dependencies]
 packaging = "*"
 
 [package.extras]
-dev = ["matplotlib", "nbclassic", "nbdev (>=0.2.39)", "numpy", "pandas", "pillow", "torch"]
+dev = ["llms-txt", "matplotlib", "nbclassic", "nbdev (>=0.2.39)", "numpy", "pandas", "pillow", "pysymbol-llm", "torch"]
 
 [[package]]
 name = "fastjsonschema"
@@ -1773,18 +1773,18 @@ cli = ["click (>=5.0)"]
 
 [[package]]
 name = "python-fasthtml"
-version = "0.5.2"
+version = "0.9.0"
 description = "The fastest way to create an HTML app"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "python-fasthtml-0.5.2.tar.gz", hash = "sha256:6e9667b5de09aff2ba5abd0d13ace58b4740bd262876b55027d4401714d68b01"},
-    {file = "python_fasthtml-0.5.2-py3-none-any.whl", hash = "sha256:b99d6cfc19c3ebe9bbfdb43c6a716b91a805c53dee50778ecd25f358dc467086"},
+    {file = "python-fasthtml-0.9.0.tar.gz", hash = "sha256:a17434328a8bfa0dec2e8f5cf724f3562ab8d67b3c1001cc8e2f691423a190c5"},
+    {file = "python_fasthtml-0.9.0-py3-none-any.whl", hash = "sha256:c23b1b6fb9ed6e0b9fae2d48548093d62a17d40eeca3a29c9d8387e5f6fe77a9"},
 ]
 
 [package.dependencies]
 beautifulsoup4 = "*"
-fastcore = ">=1.7.5"
+fastcore = ">=1.7.18"
 fastlite = ">=0.0.9"
 httpx = "*"
 itsdangerous = "*"
@@ -1795,7 +1795,7 @@ starlette = ">0.33"
 uvicorn = {version = ">=0.30", extras = ["standard"]}
 
 [package.extras]
-dev = ["ipython", "lxml"]
+dev = ["ipython", "lxml", "pysymbol-llm"]
 
 [[package]]
 name = "python-json-logger"
@@ -2967,4 +2967,4 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">3.12,<3.13"
-content-hash = "36a6d28469d12bd0baacf03a4f1d4304ef33f335cb0097f1457e0606d00aae31"
+content-hash = "dfbf12d846e675f4ba432b8f153e97a97a24990fc1f854a1ae5c8850feefc668"
