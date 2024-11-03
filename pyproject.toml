@@ -31,6 +31,11 @@ dependencies = [
     "pydantic-settings<3.0.0,>=2.2.1",
     "sentry-sdk[fastapi]<2.0.0,>=1.40.6",
     "pyjwt<3.0.0,>=2.8.0",
+    "litellm>=1.51.3",
+    "openai>=1.53.0",
+    "requests>=2.32.3",
+    "pillow>=11.0.0",
+    "loguru>=0.7.2",
 ]
 
 [tool.uv]
@@ -43,6 +48,8 @@ dev-dependencies = [
     "coverage<8.0.0,>=7.4.3",
     "isort>=5.13.2",
     "black[jupyter]>=24.10.0",
+    "ipykernel>=6.29.5",
+    "devtools>=0.12.2",
 ]
 
 [build-system]
