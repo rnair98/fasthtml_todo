@@ -1,0 +1,9 @@
+#+title:  Continue Action Prompts
+#+author: Rohit Nair
+#+date:   2024-11-03
+
+* Continue Action Prompts
+
+This is a list of sample prompts taken from Continue.dev's [[https://github.com/continuedev/prompt-file-examples][GitHub repository]] for setting up custom slash commands.
+
+You can learn more about writing prompt files for Continue [[https://docs.continue.dev/customize/deep-dives/prompt-files][here]]
