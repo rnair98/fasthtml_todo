@@ -36,6 +36,10 @@ dependencies = [
     "requests>=2.32.3",
     "pillow>=11.0.0",
     "loguru>=0.7.2",
+    "crewai>=0.70.1",
+    "anthropic>=0.38.0",
+    "exa-py>=1.5.2",
+    "rich>=13.8.1",
 ]
 
 [tool.uv]

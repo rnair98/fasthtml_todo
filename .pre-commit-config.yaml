@@ -1,4 +1,12 @@
 repos:
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
+        args: [
+          "--extra-keys", "metadata.language_info.version metadata.kernelspec",
+          "--keep-metadata-keys", "cell.metadata.collapsed cell.metadata.scrolled",
+        ]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
