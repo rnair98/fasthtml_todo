@@ -1,6 +1,7 @@
-You are an expert in Python, FastAPI, and scalable API development.
+**You are an expert in Python, FastAPI, and scalable API development.**
 
 Code Style and Structure:
+
 - Follow PEP 8 guidelines for Python code style
 - Use descriptive variable and function names with auxiliary verbs(snake_case for variables and functions, PascalCase for classes)
 - Keep functions small and focused on a single task
@@ -14,6 +15,7 @@ Code Style and Structure:
 - Use the Receive an Object, Return an Object (RORO) pattern.
 
 Python-specific Conventions:
+
 - Prefer list comprehensions and generator expressions over map() and filter()
 - Use context managers (with statements) for resource management
 - Utilize decorators for cross-cutting concerns (e.g., logging, timing)
@@ -21,6 +23,7 @@ Python-specific Conventions:
 - Use f-strings for string formatting
 
 Framework and API Development:
+
 - Use FastAPI as the primary framework for building high-performance APIs
   - Leverage FastAPI's automatic OpenAPI (Swagger) documentation
   - Utilize dependency injection for clean, testable code
@@ -30,6 +33,7 @@ Framework and API Development:
   - Utilize Pydantic's `BaseSettings` for configuration management
 
 Python/FastAPI
+
 - Use def for pure functions and async def for asynchronous operations.
 - Use type hints for all function signatures. Prefer Pydantic models over raw dictionaries for input validation.
 - File structure: exported router, sub-routes, utilities, static content, types (models, schemas).
@@ -38,6 +42,7 @@ Python/FastAPI
 - Use concise, one-line syntax for simple conditional statements (e.g., if condition: do_something()).
 
 FastAPI-Specific Guidelines
+
 - Use functional components (plain functions) and Pydantic models for input validation and response schemas.
 - Use declarative route definitions with clear return type annotations.
 - Use def for synchronous operations and async def for asynchronous ones.
@@ -49,6 +54,7 @@ FastAPI-Specific Guidelines
 - Use Pydantic's BaseModel for consistent input/output validation and response schemas.
 
 Database and Data Modeling:
+
 - Use SQLModel, which combines SQLAlchemy core with Pydantic models
   - Leverage SQLModel's ability to use the same models for database tables and API schemas
   - Utilize SQLModel's async support for high-performance database operations
@@ -57,6 +63,7 @@ Database and Data Modeling:
 - Implement proper indexing for frequently queried fields
 
 Authentication and Security:
+
 - Implement JWT for stateless authentication
   - Use FastAPI's built-in security utilities
 - Use bcrypt for password hashing
@@ -64,6 +71,7 @@ Authentication and Security:
 - Implement rate limiting for API endpoints (consider using FastAPI's dependencies for this)
 
 Error Handling and Logging:
+
 - Use FastAPI's exception handlers for consistent error responses
 - Implement custom exception classes for application-specific errors
 - Use a logging framework (e.g., Python's built-in logging module)
@@ -78,11 +86,13 @@ Error Handling and Logging:
   - Use custom error types or error factories for consistent error handling.
 
 Frontend Development:
+
 - For server-side rendering, consider using FastAPI with Jinja2 templates
 - Implement responsive design using CSS frameworks (e.g., Bootstrap)
 - For single-page applications, use a JavaScript framework (e.g., React, Vue.js) that consumes your FastAPI backend
 
 Testing:
+
 - Write unit tests using pytest
 - Implement integration tests for API endpoints using FastAPI's TestClient
 - Use factories (e.g., Factory Boy) for test data generation
@@ -90,11 +100,13 @@ Testing:
 - Utilize Pydantic's `parse_obj_as` for easy test data creation
 
 Asynchronous Processing:
+
 - Leverage FastAPI's asynchronous capabilities for concurrent processing
 - For background tasks, use FastAPI's background tasks feature or Celery for more complex scenarios
 - Implement message queues (e.g., RabbitMQ, Redis) for task management if needed
 
 Deployment and DevOps:
+
 - Use Docker for containerization
   - Create optimized Dockerfiles for your FastAPI applications
 - Implement CI/CD pipelines (e.g., GitLab CI, GitHub Actions)
@@ -103,6 +115,7 @@ Deployment and DevOps:
 - Implement health check endpoints for monitoring
 
 Performance Optimization:
+
 - Leverage FastAPI's asynchronous capabilities for I/O-bound operations
 - Use caching mechanisms (e.g., Redis) for frequently accessed data
 - Implement database query optimization techniques with SQLModel
@@ -113,20 +126,24 @@ Performance Optimization:
 - Use lazy loading techniques for large datasets and substantial API responses.
 
 API Documentation:
+
 - Utilize FastAPI's automatic interactive API documentation (Swagger UI and ReDoc)
 - Keep API documentation up-to-date by maintaining accurate Pydantic models and FastAPI path operation functions
 -  Refer to FastAPI documentation for Data Models, Path Operations, and Middleware for best practices.
 
 Version Control:
+
 - Use Git for version control
 - Implement feature branching and pull request workflows
 - Write meaningful commit messages
 
 Dependencies Management
+
 - Use pip and requirements.txt for managing project dependencies
 - Consider using uv for more advanced dependency management
 
 Key Conventions
+
 1. Rely on FastAPI’s dependency injection system for managing state and shared resources.
 2. Prioritize API performance metrics (response time, latency, throughput).
 3. Limit blocking operations in routes:
