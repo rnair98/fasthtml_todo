@@ -1442,13 +1442,13 @@ webpdf = ["playwright"]
 
 [[package]]
 name = "nbdev"
-version = "2.3.31"
+version = "2.3.33"
 description = "Create delightful software with Jupyter Notebooks"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "nbdev-2.3.31-py3-none-any.whl", hash = "sha256:6fe720e04f917c444289a2a97971a0dff94b50be4f4ba2e938e2bbbdf764693a"},
-    {file = "nbdev-2.3.31.tar.gz", hash = "sha256:6b404e070ce56751c5be96a6a901e7f2bb608217644dfafdefbf305bce2aed7a"},
+    {file = "nbdev-2.3.33-py3-none-any.whl", hash = "sha256:e3b0353d05d20392c22b7b085731d26864c9a00b88289a3743bf223c979d0e5f"},
+    {file = "nbdev-2.3.33.tar.gz", hash = "sha256:97471467cd6f5a437c13d5a94bbdbd1a57c4df140af392554434856cbdecec84"},
 ]
 
 [package.dependencies]
@@ -1459,10 +1459,11 @@ fastcore = ">=1.5.27"
 ghapi = ">=1.0.3"
 packaging = "*"
 PyYAML = "*"
+setuptools = "*"
 watchdog = "*"
 
 [package.extras]
-dev = ["black", "ipywidgets", "matplotlib", "nbclassic", "nbdev-numpy", "nbdev-stdlib", "pandas", "svg.py"]
+dev = ["black", "ipywidgets", "llms-txt", "matplotlib", "nbclassic", "nbdev-numpy", "nbdev-stdlib", "pandas", "pysymbol-llm", "svg.py"]
 
 [[package]]
 name = "nbformat"
@@ -2967,4 +2968,4 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">3.12,<3.13"
-content-hash = "3d47ecd6b6c3356825785d38336b3d3c999650ac75efd6262e485cd9e153961b"
+content-hash = "91bc2e10981f7586e1388a7ce10843718c2d22bd85221171a191d84bfdd40641"
